@@ -36,7 +36,7 @@ const styles = {
   main: {
     flex: 1,
     padding: "4rem",
-    maxWidth: "1200px",
+    //maxWidth: "1200px",
     margin: "0 auto",
     width: "100%",
     boxSizing: "border-box",
