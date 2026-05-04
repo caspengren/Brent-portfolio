@@ -22,7 +22,6 @@ const styles = {
     minHeight: "100vh",
     backgroundColor: "#0f0f0f",
     color: "#f0ede8",
-    fontFamily: "'Georgia', serif",
     display: "flex",
     flexDirection: "column",
   },
@@ -49,6 +48,7 @@ const styles = {
     fontSize: "0.8rem",
     color: "#555",
     letterSpacing: "0.05em",
+    fontFamily: "'Cinzel Decorative', cursive",
   },
 };
 
