@@ -10,6 +10,7 @@ body,
   min-height: 100vh;
   background-color: #0f0f0f;
 }
+
 .image-grid {
   columns: 4;
   gap: 10px;
@@ -40,11 +41,20 @@ body,
   }
 }
 
-
-
-         /*change this for how many columns you want on mobile  ex: columns: 2; if you want 2 */
-@media (max-width: 480px) { 
+/* change this for how many columns you want on mobile ex: columns: 2; if you want 2 */
+@media (max-width: 480px) {
   .image-grid {
     columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-contact {
+    border-left: none !important;
+    border-top: 1px solid #2a2a2a;
+    padding-left: 0 !important;
+    padding-top: 0.75rem;
+    width: 100%;
+    text-align: left;
   }
 }
