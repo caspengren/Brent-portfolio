@@ -4,13 +4,13 @@ import ImageGrid from "./ImageGrid";
 function App() {
   return (
     <div style={styles.page}>
-      <header style={styles.header}>
+      <header style={styles.header} className="header-inner">
         <Header />
       </header>
-      <main style={styles.main}>
+      <main style={styles.main} className="main-content">
         <ImageGrid />
       </main>
-      <footer style={styles.footer}>
+      <footer style={styles.footer} className="footer-inner">
         © {new Date().getFullYear()} — All rights reserved
       </footer>
     </div>
@@ -36,7 +36,6 @@ const styles = {
   main: {
     flex: 1,
     padding: "4rem",
-    //maxWidth: "1200px",
     margin: "0 auto",
     width: "100%",
     boxSizing: "border-box",

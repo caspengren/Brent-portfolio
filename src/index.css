@@ -10,3 +10,38 @@ body,
   min-height: 100vh;
   background-color: #0f0f0f;
 }
+.image-grid {
+  columns: 4;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .image-grid {
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    columns: 2;
+  }
+
+  .main-content {
+    padding: 1.5rem !important;
+  }
+
+  .header-inner {
+    padding: 1.5rem !important;
+  }
+
+  .footer-inner {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    columns: 1;
+  }
+}
