@@ -40,8 +40,11 @@ body,
   }
 }
 
-@media (max-width: 480px) {
+
+
+         /*change this for how many columns you want on mobile  ex: columns: 2; if you want 2 */
+@media (max-width: 480px) { 
   .image-grid {
-    columns: 1;
+    columns: 2;
   }
 }
