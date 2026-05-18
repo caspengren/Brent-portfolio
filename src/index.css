@@ -109,6 +109,8 @@ body,
     flex-direction: column;
     align-items: stretch;
     padding: 1.5rem;
+    max-height: 30vh;
+    overflow: hidden;
   }
 
   .header-title {
@@ -123,8 +125,9 @@ body,
     border-left: none;
     border-top: 1px solid rgba(255, 255, 255, 0.18);
     align-items: center;
-    padding: 1.5rem;
-    min-height: 220px;
+    padding: 1rem;
+    min-height: 0;
+    flex: 1 1 auto;
   }
 }
 
