@@ -11,6 +11,13 @@ body,
   background-color: #0f0f0f;
 }
 
+@font-face {
+  font-family: 'OldEnglishTextMT';
+  src: url('./Old English Text MT/oldenglishtextmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .image-grid {
   columns: 4;
   gap: 10px;
@@ -25,7 +32,7 @@ body,
   gap: 1.25rem;
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #2a2a2a;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'OldEnglishTextMT', cursive;
   background-color: #0f0f0f;
   color: #f0ede8;
   width: min(100%, 1160px);
