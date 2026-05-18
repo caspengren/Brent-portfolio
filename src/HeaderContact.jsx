@@ -5,7 +5,7 @@ export default function HeaderContact() {
       <p className="header-contact-copy">
         For inquiries — call/text
         <br />
-        (000) 000-0000
+        (218) 343-4804
       </p>
     </div>
   );
