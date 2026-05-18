@@ -22,19 +22,24 @@ body,
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1.5rem 2.5rem;
+  gap: 1.25rem;
+  padding: 1.5rem 2rem;
   border-bottom: 1px solid #2a2a2a;
   font-family: 'Cinzel Decorative', cursive;
   background-color: #0f0f0f;
   color: #f0ede8;
+  width: min(100%, 1160px);
+  margin: 0 auto;
 }
 
 .header-title {
+  flex: 1 1 0;
   font-size: clamp(1rem, 3vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #f0ede8;
+  max-width: 760px;
+  min-width: 280px;
 }
 
 .header-contact {
@@ -51,10 +56,11 @@ body,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 300px;
+  flex: 0 1 420px;
+  min-width: 320px;
   width: 100%;
-  max-width: 360px;
-  min-height: 240px;
+  max-width: 420px;
+  min-height: 220px;
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
 }
 
