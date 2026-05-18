@@ -17,6 +17,65 @@ body,
   width: 100%;
 }
 
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 2.5rem;
+  border-bottom: 1px solid #2a2a2a;
+  font-family: 'Cinzel Decorative', cursive;
+  background-color: #0f0f0f;
+  color: #f0ede8;
+}
+
+.header-title {
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f0ede8;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.14)), url("./HeaderPic.JPG");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 300px;
+  width: 100%;
+  max-width: 360px;
+  min-height: 240px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.header-contact-name {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f7f3ed;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header-contact-copy {
+  margin: 0;
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  color: #f0ede8;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  line-height: 1.5;
+}
+
 @media (max-width: 1024px) {
   .image-grid {
     columns: 3;
@@ -39,6 +98,28 @@ body,
   .footer-inner {
     padding: 1.5rem !important;
   }
+
+  .header-top {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+  }
+
+  .header-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-contact {
+    max-width: 100%;
+    min-width: auto;
+    margin-top: 1rem;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    align-items: center;
+    padding: 1.5rem;
+    min-height: 220px;
+  }
 }
 
 /* change this for how many columns you want on mobile ex: columns: 2; if you want 2 */
@@ -46,15 +127,14 @@ body,
   .image-grid {
     columns: 2;
   }
-}
 
-@media (max-width: 600px) {
+  .header-top {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
   .header-contact {
-    border-left: none !important;
-    border-top: 1px solid #2a2a2a;
-    padding-left: 0 !important;
-    padding-top: 0.75rem;
-    width: 100%;
-    text-align: left;
+    padding: 1.25rem;
+    min-height: 200px;
   }
 }
