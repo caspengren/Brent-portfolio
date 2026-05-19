@@ -1,7 +1,7 @@
 export default function HeaderTitle() {
   return (
     <h1 className="header-title">
-      Shadows Inc. Photography and Videography
+      Shadows Inc. Video & Photography 
     </h1>
   );
 }
