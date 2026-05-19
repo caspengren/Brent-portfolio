@@ -78,6 +78,16 @@ body,
   letter-spacing: 0.05em;
   color: #f5c518;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.header-contact-letter {
+  display: inline-block;
+  transform: translateY(var(--letter-ty, 0)) rotate(var(--letter-rotate, 0));
+  transform-origin: bottom center;
 }
 
 .header-contact-copy {
